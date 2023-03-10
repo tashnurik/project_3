@@ -1,0 +1,361 @@
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: white;
+    background: #001821;
+    font-size: 16px;
+    line-height: 1.41;
+    -webkit-font-smoothing: antialiazed;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {color: inherit;} /*Цвет ссылок повторяет цвет блока, в котором он находится*/
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 { /*Тем самым мы убрали ненужные верхние отступы, которые браузер по умолчанию добавил*/
+    margin: 0;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-page-wrapper {
+    background: url(./img/1.png) center top no-repeat, url(./img/2.png) right bottom 307px no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1150px;
+}
+
+.header {
+    height: 120px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 57px;
+    left: 0px;
+}
+
+.menu {
+    position: absolute;
+    top: 65px;
+    left: 250px;
+}
+
+.contacts {
+    position: absolute;
+    top: 48px;
+    right: 0;
+}
+
+.menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+    margin-left: -80px;
+    
+}
+
+.menu__link {
+    font-size: 14px;
+    text-decoration: none; /*Убирает линию под словами*/
+}
+
+.menu__link:hover {
+    color: #dfb56d;
+}
+
+.contacts {
+    font-style: normal;
+    text-align: right;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    margin-bottom: 4px;
+    font-size: 26px;
+}
+
+.contacts__dropdown-title {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #dfb56d;
+}
+
+.hero__text-section {
+    width: 511px;
+}
+
+.hero__title {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.4; /*МЕЖСТРОЧНЫЙ ИНТЕРВАЛ*/
+    margin-bottom: 23px;
+    margin-top: -44px;
+}
+
+.hero__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #dfb56d;
+    margin-bottom: 28px;
+}
+
+.btn {
+    background: #F5170E;
+    border-radius: 35px;
+    padding: 20px 36px; /*Размер плажки, кнопки*/
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase; /*ВСЕ БУВЫ БОЛЬШИЕ*/
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn--color--orange {
+    background: #F5170E;
+    margin-bottom: 245px;
+}
+
+.btn--color--white {
+    color: #F5170E;
+    background: white;
+    border: 1px solid #F5170E;
+}
+
+/*СЕКЦИЯ ТУРЫ*/
+.tours {
+    margin-bottom: 127px;
+}
+
+.section__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 51px;
+}
+
+.offers__item {
+    min-height: 305px;
+    width: 355px;
+    background: white;
+    display: inline-block;
+    border-radius: 0px 0px 5px 5px;
+    margin-right: 25px;
+    
+}
+
+.offers__header {
+    min-height: 144px; /*Указали минимальное значение*/
+    margin-bottom: 33px; /*Задали отступ от картинки до слова снизу*/
+    position: relative;
+}
+
+.offers__header-img {
+    position: absolute;
+    width: 355px;
+    height: 144px;
+}
+
+.offers__content {
+    padding: 1px 22px;
+    color: black;
+
+}
+
+.offers__title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.offers__item:last-child {
+margin-right: 0;
+}
+
+.offers__terms-dates {
+    color: #666666;
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    margin-right: 73px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.offers__terms-dates:last-child { /*Убираем отступ последнего*/
+    margin-right: 0;
+}
+
+.offers__text {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+/*СЕКЦИЯ НОВОСТИ*/
+
+.news__item {
+    width: 557px;
+    display: inline-block;
+    vertical-align: top; /*Если элементы будут увеличиваться, то верхняя часть будет оставаться*/
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.news__cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Элемент будет заполнять то место, где он находится*/
+}
+
+.news__text-content { /*Разместили надпись на картинку*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 30px; /*Добавили отступы*/
+    min-height: 140px;
+}
+
+.news__date {
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.news__desc {
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.news__title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.news {
+    margin-bottom: 55px;
+}
+
+/*Переключатель страниц*/
+
+.pager {
+    text-align: center; /*Элементы выстраиваются по центру*/
+}
+
+.pager__display,.pager__list {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager__display {
+    margin-right: 26px; /*Отступ текста "Страница 1 из 7" от номеров*/
+}
+
+.pager__item { /*Выстроили цифры с троку*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager__item--active .pager__link {
+    background: white;
+    color: #F5170E;
+}
+
+.pager__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 32px; /*Выравнивает элемент по центру текста*/
+}
+
+/*Секция о банке*/
+
+.bank__cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__desc { /*Разместили надпись на картинку*/
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 30px; /*Добавили отступы*/
+    min-height: 140px;
+}
+
+.about__title{
+    font-weight: bold;
+}
+
+/*ФУТЕР*/
+
+.footer-container__content {
+    border-top: 1px solid white;
+}
+.footer {
+    height: 152px;
+    position: relative;
+}
+
+.contacts__desc {
+    color: #9A9A9A;
+    font-size: 11px;
+}
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.socials {
+    position: absolute;
+    top: 53px;
+    right: 300px;
+}
+
+.socials__link {
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+}
+
+.socials__item--icon-telegram .socials__link {
+    background-image: url(img/telegram.png);
+}
+.socials__item--icon-vk .socials__link {
+    background-image: url(img/vk.png);
+}
+.socials__item--icon-facebook .socials__link {
+    background-image: url(img/f.png);
+}
+.socials__item--icon-instagram .socials__link {
+    background-image: url(img/in.png);
+}
